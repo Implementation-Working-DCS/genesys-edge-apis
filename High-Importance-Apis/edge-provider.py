@@ -13,7 +13,7 @@ page_number = 1 # Numero entero | el numero de la pagina (opcional) (default = 1
 name = 'name_example' # Caracteres | Nombre (opcional)
 site_id = 'site_id_example' # Caracteres | Filtra por site.id (opcional)
 edge_group_id = 'edge_group_id_example' # Caracteres | Filtra por edgeGroup.id (opcional)
-sort_by = ''name'' # Caracteres | Ordena por nombre (opcional) (default = 'name')
+sort_by = 'name' # Caracteres | Ordena por nombre (opcional) (default = 'name')
 managed = True # bool | Filtra por manejados (opcional)
 show_cloud_media = True # bool | Muestra los  cloud media devices en los resultados (opcional) (default = True)
 
@@ -23,3 +23,12 @@ try:
     pprint(api_response)
 except ApiException as e: #Error al optener la lista de edges.
     print("Ocurrio una exepcion cuando se llamo a los edges->get_telephony_providers_edges: %s\n" % e)
+
+'''
+Tambien se puede ejecutar mendiante un curl:
+
+curl -X GET 'https://api.mypurecloud.com/api/v2/telephony/providers/edges' \
+  -H 'Authorization: Bearer *******************' \
+  -H 'Content-Type: application/json'
+
+'''
