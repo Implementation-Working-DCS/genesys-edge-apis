@@ -21,7 +21,7 @@ Repositorio de las apis de mayor relevancia.
 ### /api/v2/telephony/providers/edges/sites
 
 * Para qué sirve: Gestión de sitios.
-*Por qué es esencial: Organiza y gestiona la infraestructura física y lógica.
+* Por qué es esencial: Organiza y gestiona la infraestructura física y lógica.
 
 ### /api/v2/telephony/providers/edges/metrics
 
